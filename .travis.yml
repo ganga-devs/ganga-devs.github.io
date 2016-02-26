@@ -5,3 +5,7 @@ install: pip install "Nikola[extras]"
 before_script: git remote set-url origin https://${GH_TOKEN}@github.com/ganga-devs/ganga-devs.github.io.git
 script: nikola github_deploy
 
+env:
+  global:
+    - secure: "Sq4YebqCkUmEppEanMNd58s2NKzub7F2P7ZXG0esN4kyk7AGSDwARB02HGfJvl/mF4AO7ZpPUKz5XLubhOzMsG2SOLOXzA8VihKM3TwD3WZy+lQJKp717HSrCsAbZWKl71YxOIicxer/xCK9EWS9FaFfhey3AbRg3vVdKER/a+H3wOz0oCEjh8WLGhm0TXzy0pEFfmGpOGsSvnQl+nRChyCoxKne+ADBkP7wQK2qNA6ZHFWmloutLh26jlnvsR68jLYQPqKkQOP+9JZggQ8nvsIHciPCz0Wgd7SeD7y71u7VVVQlDTA4WpxswInuGdD/2MTyHY5ZvR54WGhbJ3fn8mOjTS5YrrWZp5KpK84uu8xaN8HID+eKLcZ1zz/21Cg5mh/ctySmaqu0o8zxVjZ8ormg3+rxpP4yZFhDHWEtE8z5xC/Y5lLmhN8LKw4/ETMq7fAXrGaaTqgWP888/jxTRmQha7YVZTAwhTCEUFnL0lEAaV2RgzGlHIiLLK220idHYfCHQ2tZ1Euci6JelLY3UpXBHf4Kgrabu/rcbLPw/G/RY3dX4d6jfHs/E6ELDkMDdhD8MTKfyFkLTAIhMJqFW/VgtxdVN4pHvhtlsmq+F9svtHP7hiyBecUnQTFT+LsgYky+gRv/ix4FeIaRahK7SCr6mi+Kssuc/BdantVADkc="
+
