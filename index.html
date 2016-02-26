@@ -4,19 +4,23 @@
 <meta charset="utf-8">
 <base href="http://ganga-devs.github.io/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>index | Ganga</title>
+<title>Ganga - the job management tool | Ganga</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://ganga-devs.github.io/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><meta name="author" content="Ganga Developers">
 <meta property="og:site_name" content="Ganga">
-<meta property="og:title" content="index">
+<meta property="og:title" content="Ganga - the job management tool">
 <meta property="og:url" content="http://ganga-devs.github.io/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Ganga - the job management tool
+        In goes content, out comes a website, ready to deploy.
+        
+            Get started with Ganga »
+            Learn about Ganga features »
+        Ganga is w">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2016-02-25T12:44:48Z">
-<meta property="article:tag" content="foo">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -69,12 +73,48 @@
         <div class="row">
             
             
-<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">index</a></h1>
-
-        
-
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="jumbotron">
+    <div class="container">
+        <h2>Ganga - the job management tool</h2>
+        <p>In goes content, out comes a website, ready to deploy.</p>
+        <p>
+            <a class="btn btn-primary btn-lg get-started" href="getting-started.html" role="button">Get started with Ganga »</a>
+            <a class="btn btn-default btn-lg" href="features/index.html" role="button">Learn about Ganga features »</a>
+        </p>
+<p><small>Ganga is written in Python. Free open-source software under the <a href="license.html">GPL2+ license</a>.</small></p>
+    </div>
+</div>
+<div class="row container">
+<div class="col-md-6 container">
+<pre class="code python"><a name="rest_code_ff5b54a9f8734d80b13f2bf2840a08af-1"></a><span class="n">j</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+<a name="rest_code_ff5b54a9f8734d80b13f2bf2840a08af-2"></a><span class="n">j</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<a name="rest_code_ff5b54a9f8734d80b13f2bf2840a08af-3"></a><span class="n">j</span><span class="o">.</span><span class="n">peek</span><span class="p">(</span><span class="s1">'stdout'</span><span class="p">)</span>
+</pre>
+<p>Interacting with Ganga jobs can be as easy as threee lines.
+By default all process will run on your local computer.</p>
+</div>
+<div class="col-md-6 container">
+<pre class="code python"><a name="rest_code_ca124d18e3854657821e1540b88e2c60-1"></a><span class="n">j</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+<a name="rest_code_ca124d18e3854657821e1540b88e2c60-2"></a><span class="n">j</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">exe</span> <span class="o">=</span> <span class="s1">'my-analysis.sh'</span>
+<a name="rest_code_ca124d18e3854657821e1540b88e2c60-3"></a><span class="n">j</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'360'</span><span class="p">,</span> <span class="s1">'0.1'</span><span class="p">]</span>
+<a name="rest_code_ca124d18e3854657821e1540b88e2c60-4"></a><span class="n">j</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+</pre>
+<p>Everything is configurable and allows you to change how it works.</p>
+</div>
+</div>
+<div class="row container">
+<div class="col-md-6 container">
+<pre class="code python"><a name="rest_code_0a7488a0e28849c1876741bc5dcd5565-1"></a><span class="n">j</span> <span class="o">=</span> <span class="n">Job</span><span class="p">()</span>
+<a name="rest_code_0a7488a0e28849c1876741bc5dcd5565-2"></a><span class="n">j</span><span class="o">.</span><span class="n">backend</span> <span class="o">=</span> <span class="n">PBS</span><span class="p">()</span>
+<a name="rest_code_0a7488a0e28849c1876741bc5dcd5565-3"></a><span class="o">...</span>
+<a name="rest_code_0a7488a0e28849c1876741bc5dcd5565-4"></a><span class="n">j</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+</pre>
+<p>Running your code elsewhere is as simple as changing a single line in your code.</p>
+</div>
+</div>
+</div>
     </div>
     
 
@@ -83,7 +123,7 @@
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2016         <a href="mailto:n.tesla@example.com">Ganga Developers</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2016         <a href="mailto:">Ganga Developers</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>
