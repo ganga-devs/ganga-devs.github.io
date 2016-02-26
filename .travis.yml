@@ -3,7 +3,7 @@ python:
   - "3.4"
 cache: pip
 install: pip install "Nikola[extras]"
-before_script: git remote set-url origin https://${GH_TOKEN}@github.com/ganga-devs/ganga-devs.github.io.git && git branch -vv && git branch --track master origin/master && git pull --all
+before_script: git remote set-url origin https://${GH_TOKEN}@github.com/ganga-devs/ganga-devs.github.io.git && git branch -vvv && git branch master origin/master && git branch -vvv && git pull --all
 script: nikola github_deploy
 
 env:
