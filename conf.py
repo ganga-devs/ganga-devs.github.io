@@ -25,7 +25,7 @@ SITE_URL = "http://ganga-devs.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://ganga-devs.github.io/"
-BLOG_EMAIL = "n.tesla@example.com"
+BLOG_EMAIL = ""
 BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
 
 # Nikola is multilingual!
